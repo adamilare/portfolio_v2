@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Dispatch, SetStateAction, createContext, useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
+import { MobileMenuBtn, SidebarComponent } from "./components";
+import Home from "./pages/home.page";
+
+type sidebarContextProp = {
+	isSidebarVisible: boolean;
+	toggleSidebar: () => void;
+	isSettingsSidebarVisible: boolean;
+	setIsSettingsSidebarVisible: Dispatch<SetStateAction<boolean>>;
+};
+
+export const SidebarContext = createContext<sidebarContextProp | undefined>(undefined);
 
 function App() {
-  const [count, setCount] = useState(0)
+	const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+	const [isSettingsSidebarVisible, setIsSettingsSidebarVisible] = useState(false);
+	const [theme, setTheme] = useState("");
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	const toggleSidebar = (e?: MouseEvent) => {
+		e?.preventDefault();
+		setIsSidebarVisible((prevState) => !prevState);
+	};
+
+	useEffect(() => {
+		if (localStorage.getItem("app-theme")) {
+			setTheme(localStorage.getItem("app-theme")!);
+		} else {
+			const sysTheme = window.matchMedia("(prefers-color-scheme: light)").matches
+				? "light"
+				: "dark";
+			localStorage.setItem("app-theme", sysTheme);
+			setTheme(sysTheme);
+		}
+	}, []);
+
+	useEffect(() => {
+		const root = document.querySelector(":root");
+		root?.setAttribute(
+			"color-scheme",
+			`${localStorage.getItem("app-theme") ? localStorage.getItem("app-theme") : theme}`
+		);
+	}, [theme]);
+
+	return (
+		<section className="min-h-screen app relative">
+			<SidebarContext.Provider
+				value={{
+					isSidebarVisible,
+					toggleSidebar,
+					isSettingsSidebarVisible,
+					setIsSettingsSidebarVisible,
+				}}
+			>
+				<SidebarComponent />
+				<MobileMenuBtn />
+				<Home />
+			</SidebarContext.Provider>
+			<Toaster />
+		</section>
+	);
 }
 
-export default App
+export default App;
