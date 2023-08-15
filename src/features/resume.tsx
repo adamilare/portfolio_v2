@@ -3,7 +3,7 @@ import { TitleLabel } from '../components';
 import { Timeline } from 'primereact/timeline';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { BsFillBuildingsFill } from 'react-icons/bs';
-import { BiChevronsDown, BiChevronsRight } from 'react-icons/bi';
+import { BiChevronsRight } from 'react-icons/bi';
 
 type experienceType = {
   startdate: string;
