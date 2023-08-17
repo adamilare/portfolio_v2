@@ -54,7 +54,7 @@ const Resume = () => {
     {
       startdate: 'January 2023',
       enddate: 'August 2023',
-      certification: 'Full Stack Web Developer',
+      certification: 'Full-stack Web Developer',
       school: 'Microverse',
       schoolUrl: 'https://www.microverse.org/',
     },
