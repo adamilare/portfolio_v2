@@ -65,10 +65,9 @@ const About = () => {
             have built web and mobile applications from scratch, demonstrating
             my ability to handle the entire development process. These
             experiences have given me a deep understanding of product
-            development and the importance of creating software that meet the
-            needs of users, and that are maintainable. I am driven by a
-            commitment to excellence, always striving for the highest quality in
-            my work.
+            development and the importance of creating software that meets the
+            needs of users and is maintainable. I am driven by a commitment to
+            excellence, always striving for the highest quality in my work.
           </p>
           <p
             className="mt-6 w-full lg:w-[70%]"
