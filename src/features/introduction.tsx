@@ -15,7 +15,7 @@ const Introduction = () => {
 
       <p className="mt-10 w-full lg:w-[60%]">
         I love contributing to a better world through code! It would be my
-        pleasure to be the solution to your software related innovations.
+        pleasure to be the solution to your software-related innovations.
         <br />
         <br />
         Let's work together!
