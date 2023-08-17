@@ -2,7 +2,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { AiFillGithub } from 'react-icons/ai';
 import { HiOutlineEnvelope } from 'react-icons/hi2';
 import { SocialBtn } from '../components';
-import profile from '../assets/dp.jpg';
+import profile from '../../public/dp.jpg';
 
 const LeftSidebar = () => {
   const style = {
@@ -57,7 +57,7 @@ const LeftSidebar = () => {
         href="#contact"
         className="flex items-center justify-center w-full gap-2 py-4 tracking-widest text-white rounded-full linear-gradient"
       >
-        <HiOutlineEnvelope className="text-lg" /> LET CONNECT
+        <HiOutlineEnvelope className="text-lg" /> LET'S CONNECT
       </a>
     </div>
   );

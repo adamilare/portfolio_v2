@@ -153,7 +153,7 @@ const Resume = () => {
             className="w-full lg:w-[70%] my-name italic font-bold flex items-center"
             data-aos="fade-up"
             data-aos-duration="3000"
-            href="src/assets/damilare_resume.pdf"
+            href="./damilare_resume.pdf"
           >
             <h2>
               View Full Résumé
