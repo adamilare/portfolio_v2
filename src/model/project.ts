@@ -31,7 +31,7 @@ export const PersonalProjects: ProjectType[] = [
     image:
       'https://res.cloudinary.com/df8ypatol/image/upload/v1692115358/mobile_mvfgbl.png',
     gitHub_link: 'https://github.com/c00p75/appointment-app-frontend',
-    live_demo: 'https://cycle-cruise.onrender.com/',
+    live_demo: 'https://thecyclecruise.onrender.com/',
     tech_stacks: ['ReactJS', 'Ruby on Rails', 'Postgres', 'Git'],
     screenshots: [
       'https://res.cloudinary.com/df8ypatol/image/upload/v1692115358/mobile_mvfgbl.png',
