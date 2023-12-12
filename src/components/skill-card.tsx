@@ -7,6 +7,7 @@ type propType = {
 const SkillsCard = ({ skillProp }: propType) => {
   const { icon, label, color } = skillProp;
   const customClass: any = {
+    'bg-red-600': 'skill-box hover:bg-red-600',
     'bg-red-700': 'skill-box hover:bg-red-700',
     'bg-blue-700': 'skill-box hover:bg-blue-700',
     'bg-yellow-500': 'skill-box hover:bg-yellow-500',
@@ -17,6 +18,7 @@ const SkillsCard = ({ skillProp }: propType) => {
     'bg-violet-800': 'skill-box hover:bg-violet-800',
     'bg-purple-700': 'skill-box hover:bg-purple-700',
     'bg-pink-700': 'skill-box hover:bg-pink-700',
+    'bg-green-500': 'skill-box hover:bg-green-500',
   };
 
   return (

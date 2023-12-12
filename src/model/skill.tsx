@@ -1,12 +1,13 @@
 import { AiFillHtml5 } from 'react-icons/ai';
-import { FaReact, FaBootstrap } from 'react-icons/fa';
-import { TbBrandJavascript, TbBrandReactNative } from 'react-icons/tb';
+import { FaReact } from 'react-icons/fa';
+import { TbBrandJavascript, TbBrandReactNative, TbBrandVue, TbBrandNuxt } from 'react-icons/tb';
 import {
   SiTailwindcss,
   SiRedux,
   SiRubyonrails,
   SiTypescript,
   SiCss3,
+  SiScala,
 } from 'react-icons/si';
 
 export type SkillType = {
@@ -16,6 +17,27 @@ export type SkillType = {
 };
 
 export const SkillsModel: SkillType[] = [
+  {
+    label: 'VueJs',
+    icon: (
+      <TbBrandVue className="text-[5rem] text-green-500"></TbBrandVue>
+    ),
+    color: 'bg-green-500',
+  },
+  {
+    label: 'Scala',
+    icon: (
+      <SiScala className="text-[5rem] text-red-600"></SiScala>
+      ),
+      color: 'bg-red-600',
+  },
+  {
+    label: 'Nuxt',
+    icon: (
+      <TbBrandNuxt className="text-[5rem] text-green-500"></TbBrandNuxt>
+    ),
+    color: 'bg-green-500',
+  },
   {
     label: 'JavaScript',
     icon: (
@@ -36,7 +58,7 @@ export const SkillsModel: SkillType[] = [
     color: 'bg-blue-700',
   },
   {
-    label: 'ReactJS',
+    label: 'ReduxJS',
     icon: <SiRedux className="text-[5rem] text-purple-700"></SiRedux>,
     color: 'bg-purple-700',
   },
@@ -64,10 +86,5 @@ export const SkillsModel: SkillType[] = [
     label: 'Tailwind',
     icon: <SiTailwindcss className="text-[5rem] text-blue-400"></SiTailwindcss>,
     color: 'bg-blue-400',
-  },
-  {
-    label: 'Bootstrap',
-    icon: <FaBootstrap className="text-[5rem] text-violet-800"></FaBootstrap>,
-    color: 'bg-violet-800',
   },
 ];

@@ -25,6 +25,14 @@ type educationType = {
 const Resume = () => {
   const experiences = [
     {
+      startdate: 'Sept 2023',
+      enddate: 'Dec 2023',
+      location: 'Remote',
+      company: 'Torre',
+      companyUrl: 'https://torre.ai/damilareadepoju',
+      role: 'Software Engineer Intern',
+    },
+    {
       startdate: 'Jan 2016',
       enddate: 'Present',
       location: 'Lagos, Nigeria',
