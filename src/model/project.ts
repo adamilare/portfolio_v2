@@ -10,6 +10,21 @@ export type ProjectType = {
 
 export const PersonalProjects: ProjectType[] = [
   {
+    name: 'Padi AI',
+    description:
+      'Padi AI Browser: Unifying access to leading AI platforms for seamless exploration, across devices',
+    image:
+      'https://res.cloudinary.com/df8ypatol/image/upload/v1720013601/Padi_dual_rsdvqc.jpg',
+    gitHub_link: '#',
+    live_demo: 'https://padi.glicverse.com',
+    tech_stacks: ['Kotlin', 'ReactJS', 'NodeJS', 'TypeScript', 'Firebase'],
+    screenshots: [
+      'https://res.cloudinary.com/df8ypatol/image/upload/v1720013601/Padi_dual_rsdvqc.jpg',
+      'https://res.cloudinary.com/df8ypatol/image/upload/v1720013601/Padi_Claude_xoorzx.jpg',
+      'https://res.cloudinary.com/df8ypatol/image/upload/v1720013601/Padi_ChatGPT_hnome9.jpg',
+    ],
+  },
+  {
     name: 'E-Tracka',
     description:
       'A real estate data and property management platform. it provides a complementary suite of marketing software and technology solutions to help real estate professionals maximize business opportunities and connect with consumers.',
