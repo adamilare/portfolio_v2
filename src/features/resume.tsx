@@ -25,6 +25,14 @@ type educationType = {
 const Resume = () => {
   const experiences = [
     {
+      startdate: 'Jan 2024',
+      enddate: 'Present',
+      location: 'Lagos, Nigeria',
+      company: 'Padi AI',
+      companyUrl: 'https://padi.glicverse.com',
+      role: 'Lead Developer, Co-founder',
+    },
+    {
       startdate: 'Sept 2023',
       enddate: 'Dec 2023',
       location: 'Remote',
@@ -161,7 +169,8 @@ const Resume = () => {
             className="w-full lg:w-[70%] my-name italic font-bold flex items-center"
             data-aos="fade-up"
             data-aos-duration="3000"
-            href="./damilare_resume.pdf"
+            target='_blank'
+            href="https://padiapp.s3.eu-north-1.amazonaws.com/Damilare_Adepoju_Resume_24.pdf"
           >
             <h2>
               View Full Résumé

@@ -1,6 +1,6 @@
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaReact } from 'react-icons/fa';
-import { TbBrandJavascript, TbBrandReactNative, TbBrandVue, TbBrandNuxt } from 'react-icons/tb';
+import { TbBrandJavascript, TbBrandReactNative, TbBrandVue, TbBrandNuxt, TbBrandKotlin } from 'react-icons/tb';
 import {
   SiTailwindcss,
   SiRedux,
@@ -17,6 +17,13 @@ export type SkillType = {
 };
 
 export const SkillsModel: SkillType[] = [
+  {
+    label: 'Kotlin',
+    icon: (
+      <TbBrandKotlin className="text-[5rem] text-purple-700"></TbBrandKotlin>
+    ),
+    color: 'bg-purple-700',
+  },
   {
     label: 'VueJs',
     icon: (
